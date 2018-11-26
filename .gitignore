@@ -1,0 +1,16 @@
+__pycache__
+venv
+local
+.idea
+git.txt
+requirements.txt
+Procfile
+runtime.txt
+hidden_data.txt
+api/__pycache__
+api/modules/__pycache__
+api/modules/dataport/__pycache__
+api/modules/get/__pycache__
+api/modules/show/__pycache__
+api/modules/update/__pycache__
+api/modules/utils/__pycache__

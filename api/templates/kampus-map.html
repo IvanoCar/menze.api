@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_830b88824dfe4bc88d7a68420808d165 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_830b88824dfe4bc88d7a68420808d165" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_830b88824dfe4bc88d7a68420808d165 = L.map(
+                                  'map_830b88824dfe4bc88d7a68420808d165',
+                                  {center: [45.327803,14.466859],
+                                  zoom: 25,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_16af978949084d069802979335674e83 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_830b88824dfe4bc88d7a68420808d165);
+        
+    
+            var feature_group_4b4aca7555c6445ab7295221a095bda7 = L.featureGroup(
+                ).addTo(map_830b88824dfe4bc88d7a68420808d165);
+        
+    
+
+            var marker_bfb7f719547d4483a492b9a24f4ea7db = L.marker(
+                [45.328616,14.466992],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_4b4aca7555c6445ab7295221a095bda7);
+            
+    
+
+                var icon_311a1af6c18f45689ec56b7a33414688 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bfb7f719547d4483a492b9a24f4ea7db.setIcon(icon_311a1af6c18f45689ec56b7a33414688);
+            
+    
+            var popup_7241d7b892dd476083db0fc5d00f0ce4 = L.popup({maxWidth: '300'});
+
+            
+                var html_0473c8ea1664485393cb58cc95e6061d = $('<div id="html_0473c8ea1664485393cb58cc95e6061d" style="width: 100.0%; height: 100.0%;"><strong>Odjel za informatiku</strong></div>')[0];
+                popup_7241d7b892dd476083db0fc5d00f0ce4.setContent(html_0473c8ea1664485393cb58cc95e6061d);
+            
+
+            marker_bfb7f719547d4483a492b9a24f4ea7db.bindPopup(popup_7241d7b892dd476083db0fc5d00f0ce4);
+
+            
+        
+    
+
+            var marker_8eac1179025c4ebfa799db747f42e2c1 = L.marker(
+                [45.328744,14.466724],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_4b4aca7555c6445ab7295221a095bda7);
+            
+    
+
+                var icon_384f8edf776b492fb2bfa433bb22780a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8eac1179025c4ebfa799db747f42e2c1.setIcon(icon_384f8edf776b492fb2bfa433bb22780a);
+            
+    
+            var popup_fc05f2e90f1a49ac9cebb3d826845844 = L.popup({maxWidth: '300'});
+
+            
+                var html_704541d778f64a849a2e5425bfda86f8 = $('<div id="html_704541d778f64a849a2e5425bfda86f8" style="width: 100.0%; height: 100.0%;"><strong>Odjel za fiziku</strong></div>')[0];
+                popup_fc05f2e90f1a49ac9cebb3d826845844.setContent(html_704541d778f64a849a2e5425bfda86f8);
+            
+
+            marker_8eac1179025c4ebfa799db747f42e2c1.bindPopup(popup_fc05f2e90f1a49ac9cebb3d826845844);
+
+            
+        
+    
+
+            var marker_8aeed6b3d1df4506a6a8e6cc5b21fdeb = L.marker(
+                [45.328599,14.467199],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_4b4aca7555c6445ab7295221a095bda7);
+            
+    
+
+                var icon_d101226251484b449ddb341651b63269 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8aeed6b3d1df4506a6a8e6cc5b21fdeb.setIcon(icon_d101226251484b449ddb341651b63269);
+            
+    
+            var popup_7b1cce91fdac432c879c56fd61685260 = L.popup({maxWidth: '300'});
+
+            
+                var html_002d7f858a8b453c9f7ba5abdc2ad692 = $('<div id="html_002d7f858a8b453c9f7ba5abdc2ad692" style="width: 100.0%; height: 100.0%;"><strong>Odjel za matematiku</strong></div>')[0];
+                popup_7b1cce91fdac432c879c56fd61685260.setContent(html_002d7f858a8b453c9f7ba5abdc2ad692);
+            
+
+            marker_8aeed6b3d1df4506a6a8e6cc5b21fdeb.bindPopup(popup_7b1cce91fdac432c879c56fd61685260);
+
+            
+        
+    
+
+            var marker_e752872713ee4fd1917a2719eb8b7112 = L.marker(
+                [45.328524,14.467014],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_4b4aca7555c6445ab7295221a095bda7);
+            
+    
+
+                var icon_663b0d5f0d0b4b59a90d7ec664a43252 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e752872713ee4fd1917a2719eb8b7112.setIcon(icon_663b0d5f0d0b4b59a90d7ec664a43252);
+            
+    
+            var popup_07b6df0b325b4a498cbe561e27e3bd82 = L.popup({maxWidth: '300'});
+
+            
+                var html_05b21a9641794ac5bb9f3f146c7a03ae = $('<div id="html_05b21a9641794ac5bb9f3f146c7a03ae" style="width: 100.0%; height: 100.0%;"><strong>Odjel za biotehnologiju</strong></div>')[0];
+                popup_07b6df0b325b4a498cbe561e27e3bd82.setContent(html_05b21a9641794ac5bb9f3f146c7a03ae);
+            
+
+            marker_e752872713ee4fd1917a2719eb8b7112.bindPopup(popup_07b6df0b325b4a498cbe561e27e3bd82);
+
+            
+        
+    
+
+            var marker_32478ea4ffe84728b32d103c21d69383 = L.marker(
+                [45.328787,14.467884],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_4b4aca7555c6445ab7295221a095bda7);
+            
+    
+
+                var icon_d17c3fd727264592b90567b0007eeab2 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_32478ea4ffe84728b32d103c21d69383.setIcon(icon_d17c3fd727264592b90567b0007eeab2);
+            
+    
+            var popup_a6bc3556851e41edb981cb083512b3dd = L.popup({maxWidth: '300'});
+
+            
+                var html_ae61ee67496e424d860fa4f16bd6d65b = $('<div id="html_ae61ee67496e424d860fa4f16bd6d65b" style="width: 100.0%; height: 100.0%;"><strong>Gradevinski fakultet</strong></div>')[0];
+                popup_a6bc3556851e41edb981cb083512b3dd.setContent(html_ae61ee67496e424d860fa4f16bd6d65b);
+            
+
+            marker_32478ea4ffe84728b32d103c21d69383.bindPopup(popup_a6bc3556851e41edb981cb083512b3dd);
+
+            
+        
+    
+
+            var marker_779ad8403c334582804bb16b8d2ed551 = L.marker(
+                [45.327956,14.465935],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_4b4aca7555c6445ab7295221a095bda7);
+            
+    
+
+                var icon_cee23ffaa777457e9415f33a7e4e07f4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_779ad8403c334582804bb16b8d2ed551.setIcon(icon_cee23ffaa777457e9415f33a7e4e07f4);
+            
+    
+            var popup_14485068331b4501ae817a919e17c131 = L.popup({maxWidth: '300'});
+
+            
+                var html_0798365229e249a6b9beaa0c8e4bc6c3 = $('<div id="html_0798365229e249a6b9beaa0c8e4bc6c3" style="width: 100.0%; height: 100.0%;"><strong>Filozofski fakultet</strong></div>')[0];
+                popup_14485068331b4501ae817a919e17c131.setContent(html_0798365229e249a6b9beaa0c8e4bc6c3);
+            
+
+            marker_779ad8403c334582804bb16b8d2ed551.bindPopup(popup_14485068331b4501ae817a919e17c131);
+
+            
+        
+    
+
+            var marker_0a2536ac2438406c8ae7075679e96ef5 = L.marker(
+                [45.327036,14.466727],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_4b4aca7555c6445ab7295221a095bda7);
+            
+    
+
+                var icon_5a8572db909a4594817c5ee97d6dbcc1 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0a2536ac2438406c8ae7075679e96ef5.setIcon(icon_5a8572db909a4594817c5ee97d6dbcc1);
+            
+    
+            var popup_6e819630fae1447dbae7e490e975aee8 = L.popup({maxWidth: '300'});
+
+            
+                var html_02d948402fb649b881d56bb5fdd76cad = $('<div id="html_02d948402fb649b881d56bb5fdd76cad" style="width: 100.0%; height: 100.0%;"><strong>Akademija primjenjennih umjetnosti</strong></div>')[0];
+                popup_6e819630fae1447dbae7e490e975aee8.setContent(html_02d948402fb649b881d56bb5fdd76cad);
+            
+
+            marker_0a2536ac2438406c8ae7075679e96ef5.bindPopup(popup_6e819630fae1447dbae7e490e975aee8);
+
+            
+        
+    
+            var feature_group_aff4d4f30a4e41b191133d7d9cdacba1 = L.featureGroup(
+                ).addTo(map_830b88824dfe4bc88d7a68420808d165);
+        
+    
+
+            var marker_928b00ab431c4da88dfd4b91dcb6c9fb = L.marker(
+                [45.328418,14.467164],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_aff4d4f30a4e41b191133d7d9cdacba1);
+            
+    
+
+                var icon_8938078705da4c1d9592ae16b8a3e4d7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_928b00ab431c4da88dfd4b91dcb6c9fb.setIcon(icon_8938078705da4c1d9592ae16b8a3e4d7);
+            
+    
+            var popup_de336a857a78417cab13e4a299583b1e = L.popup({maxWidth: '300'});
+
+            
+                var html_f4cfd010133c4037bd88c69f595295a9 = $('<div id="html_f4cfd010133c4037bd88c69f595295a9" style="width: 100.0%; height: 100.0%;"><strong>Formula</strong></div>')[0];
+                popup_de336a857a78417cab13e4a299583b1e.setContent(html_f4cfd010133c4037bd88c69f595295a9);
+            
+
+            marker_928b00ab431c4da88dfd4b91dcb6c9fb.bindPopup(popup_de336a857a78417cab13e4a299583b1e);
+
+            
+        
+    
+
+            var marker_33c8c20d2e58409584e0a4510da00277 = L.marker(
+                [45.328436,14.468709],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_aff4d4f30a4e41b191133d7d9cdacba1);
+            
+    
+
+                var icon_123668185f444a498ff0aa3dfc6706f8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_33c8c20d2e58409584e0a4510da00277.setIcon(icon_123668185f444a498ff0aa3dfc6706f8);
+            
+    
+            var popup_3d021e672961451597b7918f4f9b4f10 = L.popup({maxWidth: '300'});
+
+            
+                var html_a2e98a1bb2d648efad89672b52e29f8d = $('<div id="html_a2e98a1bb2d648efad89672b52e29f8d" style="width: 100.0%; height: 100.0%;"><strong>Akvarij</strong></div>')[0];
+                popup_3d021e672961451597b7918f4f9b4f10.setContent(html_a2e98a1bb2d648efad89672b52e29f8d);
+            
+
+            marker_33c8c20d2e58409584e0a4510da00277.bindPopup(popup_3d021e672961451597b7918f4f9b4f10);
+
+            
+        
+    
+
+            var marker_91afb109eac64176be1adf82f25b92a6 = L.marker(
+                [45.328387,14.469186],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_aff4d4f30a4e41b191133d7d9cdacba1);
+            
+    
+
+                var icon_24c33aa2bb5848e8880d2d997be2cbee = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_91afb109eac64176be1adf82f25b92a6.setIcon(icon_24c33aa2bb5848e8880d2d997be2cbee);
+            
+    
+            var popup_ea656718a40e49baa10a6db015ac180a = L.popup({maxWidth: '300'});
+
+            
+                var html_bb5974f2a8244b349f68fe9fbaacd0dc = $('<div id="html_bb5974f2a8244b349f68fe9fbaacd0dc" style="width: 100.0%; height: 100.0%;"><strong>Restoran Kampus</strong></div>')[0];
+                popup_ea656718a40e49baa10a6db015ac180a.setContent(html_bb5974f2a8244b349f68fe9fbaacd0dc);
+            
+
+            marker_91afb109eac64176be1adf82f25b92a6.bindPopup(popup_ea656718a40e49baa10a6db015ac180a);
+
+            
+        
+    
+            var feature_group_1f03ada07628442099770de76365944b = L.featureGroup(
+                ).addTo(map_830b88824dfe4bc88d7a68420808d165);
+        
+    
+
+            var marker_c0eae0582fc14098b0abaa01b11bd2f3 = L.marker(
+                [45.32857,14.466555],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_1f03ada07628442099770de76365944b);
+            
+    
+
+                var icon_30822c1adaee41f3afba535d20d2a58b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c0eae0582fc14098b0abaa01b11bd2f3.setIcon(icon_30822c1adaee41f3afba535d20d2a58b);
+            
+    
+            var popup_cc9b558f32534972927d39fa5c71ee78 = L.popup({maxWidth: '300'});
+
+            
+                var html_25366dbcb46248649777cdae7412dfb9 = $('<div id="html_25366dbcb46248649777cdae7412dfb9" style="width: 100.0%; height: 100.0%;"><strong>Sveucilisna knjiznica</strong></div>')[0];
+                popup_cc9b558f32534972927d39fa5c71ee78.setContent(html_25366dbcb46248649777cdae7412dfb9);
+            
+
+            marker_c0eae0582fc14098b0abaa01b11bd2f3.bindPopup(popup_cc9b558f32534972927d39fa5c71ee78);
+
+            
+        
+    
+
+            var marker_ffaf56eca6e54fabbfca527559a90726 = L.marker(
+                [45.327752,14.465455],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_1f03ada07628442099770de76365944b);
+            
+    
+
+                var icon_2c18df5bc5c044e48f6f2bb651f4c3b5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ffaf56eca6e54fabbfca527559a90726.setIcon(icon_2c18df5bc5c044e48f6f2bb651f4c3b5);
+            
+    
+            var popup_0d91c69a118445c3a9ee3e39a1534063 = L.popup({maxWidth: '300'});
+
+            
+                var html_9a585e43f2be41d3a9d67ad6fe139133 = $('<div id="html_9a585e43f2be41d3a9d67ad6fe139133" style="width: 100.0%; height: 100.0%;"><strong>PBZ, ZABA bankomat</strong></div>')[0];
+                popup_0d91c69a118445c3a9ee3e39a1534063.setContent(html_9a585e43f2be41d3a9d67ad6fe139133);
+            
+
+            marker_ffaf56eca6e54fabbfca527559a90726.bindPopup(popup_0d91c69a118445c3a9ee3e39a1534063);
+
+            
+        
+    
+
+            var marker_be6d8426f7464e96a8ad1f7906822a29 = L.marker(
+                [45.328785,14.468049],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_1f03ada07628442099770de76365944b);
+            
+    
+
+                var icon_07ee76a27ced4444a5f895ead27de965 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_be6d8426f7464e96a8ad1f7906822a29.setIcon(icon_07ee76a27ced4444a5f895ead27de965);
+            
+    
+            var popup_7b6802d917c64b4787a9f7163d5ec254 = L.popup({maxWidth: '300'});
+
+            
+                var html_ed49b43653264d368037747fa2a795d2 = $('<div id="html_ed49b43653264d368037747fa2a795d2" style="width: 100.0%; height: 100.0%;"><strong>Kopirnica</strong></div>')[0];
+                popup_7b6802d917c64b4787a9f7163d5ec254.setContent(html_ed49b43653264d368037747fa2a795d2);
+            
+
+            marker_be6d8426f7464e96a8ad1f7906822a29.bindPopup(popup_7b6802d917c64b4787a9f7163d5ec254);
+
+            
+        
+    
+
+            var marker_07406208681f40b2a1b362110161a80d = L.marker(
+                [45.327957,14.465608],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_1f03ada07628442099770de76365944b);
+            
+    
+
+                var icon_946a07bf0ea9439aa558c8545dfdb609 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_07406208681f40b2a1b362110161a80d.setIcon(icon_946a07bf0ea9439aa558c8545dfdb609);
+            
+    
+            var popup_6841888d03df44bb931330d53580eddd = L.popup({maxWidth: '300'});
+
+            
+                var html_01bbf27fc3424f53bffa512f1fbf9b89 = $('<div id="html_01bbf27fc3424f53bffa512f1fbf9b89" style="width: 100.0%; height: 100.0%;"><strong>Kopirnica</strong></div>')[0];
+                popup_6841888d03df44bb931330d53580eddd.setContent(html_01bbf27fc3424f53bffa512f1fbf9b89);
+            
+
+            marker_07406208681f40b2a1b362110161a80d.bindPopup(popup_6841888d03df44bb931330d53580eddd);
+
+            
+        
+    
+
+            var marker_f257e0dda9164d2cb68d9559c758afc3 = L.marker(
+                [45.328549,14.469771],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_1f03ada07628442099770de76365944b);
+            
+    
+
+                var icon_63e436f94af24029ad1cb0fc4420bdac = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f257e0dda9164d2cb68d9559c758afc3.setIcon(icon_63e436f94af24029ad1cb0fc4420bdac);
+            
+    
+            var popup_b8f80fa9199b41ec97986e3b0f3a80e8 = L.popup({maxWidth: '300'});
+
+            
+                var html_23be496f04a642bd93927383925b4ead = $('<div id="html_23be496f04a642bd93927383925b4ead" style="width: 100.0%; height: 100.0%;"><strong>Teretana</strong></div>')[0];
+                popup_b8f80fa9199b41ec97986e3b0f3a80e8.setContent(html_23be496f04a642bd93927383925b4ead);
+            
+
+            marker_f257e0dda9164d2cb68d9559c758afc3.bindPopup(popup_b8f80fa9199b41ec97986e3b0f3a80e8);
+
+            
+        
+    
+
+            var marker_b066b5de729b4b9a804963f6aab7f4dd = L.marker(
+                [45.32827,14.469454],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_1f03ada07628442099770de76365944b);
+            
+    
+
+                var icon_272d40ea5e50437796868fb5dd6cb647 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b066b5de729b4b9a804963f6aab7f4dd.setIcon(icon_272d40ea5e50437796868fb5dd6cb647);
+            
+    
+            var popup_d662f7114d954a53853748a49a361ddf = L.popup({maxWidth: '300'});
+
+            
+                var html_fc9fcedc1bed40e59cd62ab83a82cdbd = $('<div id="html_fc9fcedc1bed40e59cd62ab83a82cdbd" style="width: 100.0%; height: 100.0%;"><strong>Recepcija domova</strong></div>')[0];
+                popup_d662f7114d954a53853748a49a361ddf.setContent(html_fc9fcedc1bed40e59cd62ab83a82cdbd);
+            
+
+            marker_b066b5de729b4b9a804963f6aab7f4dd.bindPopup(popup_d662f7114d954a53853748a49a361ddf);
+
+            
+        
+    
+
+            var marker_8fe5baf95f4d4c37b3322aaa29fa89fb = L.marker(
+                [45.327791,14.4698],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_1f03ada07628442099770de76365944b);
+            
+    
+
+                var icon_417295cff850489e8be3cebff6d91b6a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8fe5baf95f4d4c37b3322aaa29fa89fb.setIcon(icon_417295cff850489e8be3cebff6d91b6a);
+            
+    
+            var popup_fa406d5b1e9343d5a8863f183cc85ecc = L.popup({maxWidth: '300'});
+
+            
+                var html_25af935855c44e5e8549376a7ee57bdd = $('<div id="html_25af935855c44e5e8549376a7ee57bdd" style="width: 100.0%; height: 100.0%;"><strong>Studentski centar</strong></div>')[0];
+                popup_fa406d5b1e9343d5a8863f183cc85ecc.setContent(html_25af935855c44e5e8549376a7ee57bdd);
+            
+
+            marker_8fe5baf95f4d4c37b3322aaa29fa89fb.bindPopup(popup_fa406d5b1e9343d5a8863f183cc85ecc);
+
+            
+        
+    
+
+            var marker_963da1ebc77e45d38cb4bfc7c743e66c = L.marker(
+                [45.3277,14.469864],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_1f03ada07628442099770de76365944b);
+            
+    
+
+                var icon_e745e3f1943140fda8b0ad1add7817e6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_963da1ebc77e45d38cb4bfc7c743e66c.setIcon(icon_e745e3f1943140fda8b0ad1add7817e6);
+            
+    
+            var popup_d5e0b3f129264c2cb16adc9023132915 = L.popup({maxWidth: '300'});
+
+            
+                var html_0ef5ca40cbc542269c5d1be7dabc7173 = $('<div id="html_0ef5ca40cbc542269c5d1be7dabc7173" style="width: 100.0%; height: 100.0%;"><strong>Praonica</strong></div>')[0];
+                popup_d5e0b3f129264c2cb16adc9023132915.setContent(html_0ef5ca40cbc542269c5d1be7dabc7173);
+            
+
+            marker_963da1ebc77e45d38cb4bfc7c743e66c.bindPopup(popup_d5e0b3f129264c2cb16adc9023132915);
+
+            
+        
+    
+            var layer_control_879ce69d5f2649bb9622e5a14196907c = {
+                base_layers : { "openstreetmap" : tile_layer_16af978949084d069802979335674e83, },
+                overlays : { "Fakulteti" : feature_group_4b4aca7555c6445ab7295221a095bda7,"Kafici i restorani" : feature_group_aff4d4f30a4e41b191133d7d9cdacba1,"Ostalo" : feature_group_1f03ada07628442099770de76365944b, }
+                };
+            L.control.layers(
+                layer_control_879ce69d5f2649bb9622e5a14196907c.base_layers,
+                layer_control_879ce69d5f2649bb9622e5a14196907c.overlays,
+                {position: 'topright',
+                 collapsed: true,
+                 autoZIndex: true
+                }).addTo(map_830b88824dfe4bc88d7a68420808d165);
+        
+</script>
