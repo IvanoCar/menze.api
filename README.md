@@ -4,15 +4,13 @@ Web API devoloped for **MenzeRi project** - complete solution which enables stud
 
 It includes:
 
-- **Desktop application** - Windows desktop application made with Electron and JS for restaurant management adopted completely to their business process - 
-
-  [repo]: https://github.com/riverDeer12/menzeRi	"Github repo"
+- **Desktop application** - Windows desktop application made with Electron and JS for restaurant management adopted completely to their business process - [Github repo](https://github.com/riverDeer12/menzeRi)
 
 - **WebAPI**
 
 - **Mobile application MenzeRi** - Android application for showing menus, among other functionality. 
 
-  [zubi96]: https://github.com/zubi96
+  [zubi96](https://github.com/zubi96)
 
 ## API
 
@@ -28,5 +26,11 @@ It is split into several modules:
 - **show** module which serves campus maps to mobile app users
 - **utils** module
 
+## TODO
 
+- Limiting number of requests
+- Improve auth
+- Code optimization
+- Implement news and job data
+- (....)
 
